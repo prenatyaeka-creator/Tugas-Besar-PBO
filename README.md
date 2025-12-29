@@ -52,4 +52,4 @@ Frontend runs at: http://localhost:3000
 ## Forgot Password (OTP via Email)
 Fitur ini ada di backend. Set konfigurasi SMTP (opsional) di `backend/.env.xampp.sh`, lalu gunakan endpoint:
 - `POST /api/auth/forgot-password`
-- `POST /api/auth/reset-password`
+- `POST /api/auth/reset-password`# Tugas-Besar-PBO
