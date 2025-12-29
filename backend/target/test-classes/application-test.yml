@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:taskmate_test;MODE=MySQL;DB_CLOSE_DELAY=-1
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      # Create schema automatically for tests so ApplicationContext can start
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+
+  # We don't need Flyway for tests when Hibernate auto-creates the schema.
+  flyway:
+    enabled: false
